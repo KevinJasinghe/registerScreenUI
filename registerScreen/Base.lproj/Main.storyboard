@@ -1,24 +1,232 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="registerScreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="CustomTextField" customModule="registerScreen" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="yNv-Gv-eS4">
+                                <rect key="frame" x="20" y="84" width="379" height="710.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HRo-9V-CTK">
+                                        <rect key="frame" x="45.5" y="0.0" width="288" height="33"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift App Development" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zll-Mj-k3V">
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="33"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                                <color key="textColor" systemColor="linkColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gG9-4y-45X">
+                                        <rect key="frame" x="100" y="146" width="179" height="22.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jML-Yw-XpX">
+                                                <rect key="frame" x="0.0" y="0.0" width="179" height="22.5"/>
+                                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zpQ-Km-mHN">
+                                        <rect key="frame" x="10" y="281.5" width="359" height="285"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jts-Ey-hdk">
+                                                <rect key="frame" x="10" y="0.0" width="339" height="41"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T4E-VB-9MR" customClass="CustomTextField" customModule="registerScreen" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="339" height="41"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="41" id="3jg-Ie-PHa"/>
+                                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="41" id="HFO-NG-pBJ"/>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="41" id="ijv-aT-vO9"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="T4E-VB-9MR" secondAttribute="trailing" id="S1D-h2-PdF"/>
+                                                    <constraint firstItem="T4E-VB-9MR" firstAttribute="leading" secondItem="jts-Ey-hdk" secondAttribute="leading" id="xdL-7O-WLd"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Sc7-fR-X9k">
+                                                <rect key="frame" x="10" y="61" width="339" height="41"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QMR-qf-ETv" customClass="CustomTextField" customModule="registerScreen" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="339" height="41"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="41" id="DhU-LD-Ele"/>
+                                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="41" id="gxC-zb-rPG"/>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="41" id="ohF-Es-1jS"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="QMR-qf-ETv" firstAttribute="leading" secondItem="Sc7-fR-X9k" secondAttribute="leading" id="EEK-rI-CTA"/>
+                                                    <constraint firstItem="QMR-qf-ETv" firstAttribute="leading" secondItem="Sc7-fR-X9k" secondAttribute="leading" constant="10" id="JYL-di-l9K"/>
+                                                    <constraint firstAttribute="trailing" secondItem="QMR-qf-ETv" secondAttribute="trailing" id="My5-KT-WsM"/>
+                                                    <constraint firstAttribute="trailing" secondItem="QMR-qf-ETv" secondAttribute="trailing" constant="10" id="aBE-s6-oIL"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="z6R-R1-jhA">
+                                                <rect key="frame" x="10" y="122" width="339" height="41"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j3a-DE-Bmi" customClass="CustomTextField" customModule="registerScreen" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="339" height="41"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="41" id="1Rd-Cp-CzI"/>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="41" id="JR2-6D-4d4"/>
+                                                            <constraint firstAttribute="height" constant="41" id="SRP-eJ-iLi"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="j3a-DE-Bmi" secondAttribute="trailing" id="Qrh-jr-Mb2"/>
+                                                    <constraint firstItem="j3a-DE-Bmi" firstAttribute="leading" secondItem="z6R-R1-jhA" secondAttribute="leading" id="b4H-Pp-7J0"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UtQ-mX-BXG">
+                                                <rect key="frame" x="10" y="183" width="339" height="41"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qh4-2Q-TJN" customClass="CustomTextField" customModule="registerScreen" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="339" height="41"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="41" id="f3r-lJ-V7O"/>
+                                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="41" id="nJs-ug-0T5"/>
+                                                            <constraint firstAttribute="height" constant="41" id="tNl-2O-bTW"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="qh4-2Q-TJN" secondAttribute="trailing" id="m8m-i4-8Xh"/>
+                                                    <constraint firstItem="qh4-2Q-TJN" firstAttribute="leading" secondItem="UtQ-mX-BXG" secondAttribute="leading" id="x6M-3o-wpm"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sDf-sR-Du9">
+                                                <rect key="frame" x="10" y="244" width="339" height="41"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TzX-p1-UCJ" customClass="CustomTextField" customModule="registerScreen" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="339" height="41"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="41" id="8yg-eq-jUc"/>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="41" id="TJB-Uv-fPf"/>
+                                                            <constraint firstAttribute="height" constant="41" id="oZj-VO-f8e"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="TzX-p1-UCJ" firstAttribute="leading" secondItem="sDf-sR-Du9" secondAttribute="leading" id="ZWD-mP-lM1"/>
+                                                    <constraint firstAttribute="trailing" secondItem="TzX-p1-UCJ" secondAttribute="trailing" constant="10" id="bCp-DT-5z3"/>
+                                                    <constraint firstAttribute="trailing" secondItem="TzX-p1-UCJ" secondAttribute="trailing" id="odI-bT-S6A"/>
+                                                    <constraint firstItem="TzX-p1-UCJ" firstAttribute="leading" secondItem="sDf-sR-Du9" secondAttribute="leading" constant="10" id="yYK-fh-VP5"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="jts-Ey-hdk" firstAttribute="leading" secondItem="zpQ-Km-mHN" secondAttribute="leading" constant="10" id="0qw-cB-Y3a"/>
+                                            <constraint firstItem="jts-Ey-hdk" firstAttribute="leading" secondItem="zpQ-Km-mHN" secondAttribute="leading" constant="10" id="LKF-ua-z12"/>
+                                            <constraint firstAttribute="trailing" secondItem="z6R-R1-jhA" secondAttribute="trailing" constant="10" id="Qa9-VJ-GKf"/>
+                                            <constraint firstAttribute="trailing" secondItem="Sc7-fR-X9k" secondAttribute="trailing" constant="10" id="TbA-dU-PNH"/>
+                                            <constraint firstAttribute="trailing" secondItem="jts-Ey-hdk" secondAttribute="trailing" constant="10" id="YnA-gZ-69m"/>
+                                            <constraint firstAttribute="trailing" secondItem="jts-Ey-hdk" secondAttribute="trailing" constant="10" id="fJV-6I-Pqj"/>
+                                            <constraint firstItem="z6R-R1-jhA" firstAttribute="leading" secondItem="zpQ-Km-mHN" secondAttribute="leading" constant="10" id="jAe-UB-wjK"/>
+                                            <constraint firstAttribute="trailing" secondItem="sDf-sR-Du9" secondAttribute="trailing" constant="10" id="jqB-3D-GQB"/>
+                                            <constraint firstItem="Sc7-fR-X9k" firstAttribute="leading" secondItem="zpQ-Km-mHN" secondAttribute="leading" constant="10" id="nOa-1h-0VG"/>
+                                            <constraint firstItem="sDf-sR-Du9" firstAttribute="leading" secondItem="zpQ-Km-mHN" secondAttribute="leading" constant="10" id="nz6-26-Rzb"/>
+                                            <constraint firstAttribute="trailing" secondItem="UtQ-mX-BXG" secondAttribute="trailing" constant="10" id="ttn-r5-akM"/>
+                                            <constraint firstItem="UtQ-mX-BXG" firstAttribute="leading" secondItem="zpQ-Km-mHN" secondAttribute="leading" constant="10" id="yPO-h2-bYE"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="O2w-Y5-dKs">
+                                        <rect key="frame" x="10" y="679.5" width="359" height="31"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z0W-DQ-Aoe" customClass="SignUpButton" customModule="registerScreen" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="359" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Z0W-DQ-Aoe" secondAttribute="trailing" id="29S-dW-vuB"/>
+                                            <constraint firstItem="Z0W-DQ-Aoe" firstAttribute="leading" secondItem="O2w-Y5-dKs" secondAttribute="leading" id="OJM-CH-8ju"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="O2w-Y5-dKs" secondAttribute="trailing" constant="10" id="Att-Zq-0Ry"/>
+                                    <constraint firstAttribute="trailing" secondItem="zpQ-Km-mHN" secondAttribute="trailing" constant="10" id="L6m-ZF-f63"/>
+                                    <constraint firstItem="gG9-4y-45X" firstAttribute="leading" secondItem="yNv-Gv-eS4" secondAttribute="leading" constant="100" id="QQs-xH-XiD"/>
+                                    <constraint firstItem="zpQ-Km-mHN" firstAttribute="leading" secondItem="yNv-Gv-eS4" secondAttribute="leading" constant="10" id="UH4-Su-soY"/>
+                                    <constraint firstItem="O2w-Y5-dKs" firstAttribute="leading" secondItem="yNv-Gv-eS4" secondAttribute="leading" constant="10" id="dpX-bc-zCY"/>
+                                    <constraint firstAttribute="trailing" secondItem="zpQ-Km-mHN" secondAttribute="trailing" constant="20" id="k3j-iX-WBM"/>
+                                    <constraint firstAttribute="trailing" secondItem="gG9-4y-45X" secondAttribute="trailing" constant="100" id="krE-R7-SgF"/>
+                                    <constraint firstItem="zpQ-Km-mHN" firstAttribute="leading" secondItem="yNv-Gv-eS4" secondAttribute="leading" constant="20" id="yCp-Uh-hlX"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="79B-NW-iMi">
+                                <rect key="frame" x="10" y="834.5" width="394" height="17.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Already have an account? Please sign in-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sox-qf-B2o">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yNv-Gv-eS4" secondAttribute="trailing" constant="20" id="77L-yZ-cUi"/>
+                            <constraint firstAttribute="trailing" secondItem="yNv-Gv-eS4" secondAttribute="trailing" constant="40" id="AI3-rv-6kx"/>
+                            <constraint firstItem="yNv-Gv-eS4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="ATt-Ep-DNf"/>
+                            <constraint firstItem="yNv-Gv-eS4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="IoY-PT-SVM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="79B-NW-iMi" secondAttribute="bottom" constant="10" id="Nuf-sh-65S"/>
+                            <constraint firstItem="yNv-Gv-eS4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="RjM-gJ-0Pp"/>
+                            <constraint firstItem="79B-NW-iMi" firstAttribute="top" secondItem="yNv-Gv-eS4" secondAttribute="bottom" constant="20" id="StQ-S2-tQ1"/>
+                            <constraint firstItem="79B-NW-iMi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Zh6-4f-VFL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yNv-Gv-eS4" secondAttribute="trailing" constant="15" id="b8p-vT-cf8"/>
+                            <constraint firstItem="79B-NW-iMi" firstAttribute="top" secondItem="yNv-Gv-eS4" secondAttribute="bottom" constant="40" id="lE0-9O-u1O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="79B-NW-iMi" secondAttribute="trailing" constant="10" id="q3r-ja-ksm"/>
+                            <constraint firstItem="yNv-Gv-eS4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vgC-ad-C6A"/>
+                            <constraint firstItem="yNv-Gv-eS4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="xe1-UT-Ylc"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="11.594202898550726" y="79.6875"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
